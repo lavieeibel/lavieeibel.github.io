@@ -1,0 +1,355 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"de",
+				"default"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "SCRUM OF SCRUMS\n1/7 - 1/8\nRelease happened\nDaniel - taking over TicketEvo e2e\nMe - FulfillmentTicketAvailabilityProcessor -> SaveETicketProcessor \nAndrey/Eugene - Still out\nChops - \n\nFriday/Monday - 1/11\nDaniel - tevo e2e\nMe - fulfillmentTicketAvailabilityProcessor finish/cleanup, started SaveETicketProcessor\nAndrey - catching up, grooming, started host API story\nEugene - finishing up shipped ticket auto buyer\n\n1/11 - 1/12\nDaniel - tevo e2e\nMe - closed out fulfillmentprocessor, finishing up saveEticketprocessor\nAndrey - almost done with host api refactor, starting specs tomorrow\nEugene - shipped ticket api, put out PR, conflicts with tevo develop\n\n1/12 - 1/13\nDaniel - specs around tevo, manual testing and more specs\nMe - grooooming and a bit of saveeticket specs\nAndrey - started fixing specs for host, still working through\nEugene - automate cancelled orders archtics, finished shipped auto buyer, scope change on shippedTicketAutoBuyer\nMarty/Chops - update payment status bug may be bigger (possible P1), Chops is looking into it\n\n1/13 - 1/14\nAndrey - host api update check problems, almost done with specs\nEugene - sick, no progress,\nDaniel - tevo e2e, ticketbuyer functions, fixed a few bugs and specced, couple days left\nMe - saveEticketprocessor\nchops - orderdetails bug in backlog\n\nEugene - archtics cancellation\nDaniel - tevo going well, possible release story next sprint based on demo stuff\nBrian - finished up saveEticketprocessor, pre-groomed host event/seatmap stuff\nAndrey - didn't get update, still going with host api stuff, worked with daniel to clarify a few points of confusion yesterday\nChops - helping with tevo now\n\nFriday/Monday - 1/18\nDaniel - tevo, talked to J Cobb, actual issue with shipments api and fixed it and specs work now!\nAndrey - blocked on host api story, need to check partner api key, unknown on how long\n   also pulled in archtics story and almost finished\nEugene - automated cancelled orders almost done, still need to spec it out, test, and demo, making release story for next sprint\nBrian - grooming, build fixing, archtics story\n\nOverall - \nJust metadata - bunch of pre-grooming, next actual session is for wednesday\nArchtics HOST API update - andrey is blocked, Daniel is working with him to unblock\nTEvo - Super good news, Daniel met J from Tevo at the conference and they fixed their api and now things are working\npushing demos (archtics property level config/tevo) to next sprint, adding release stories for each\nnothing going into the release\n\n1/18 - 1/19 -\nDaniel - on a qual ready for e2e\nAndrey - fixed auth problem with host, another host unauthorized error, still blocked\nEugene - fixing specs for automate cancelled orders, looking at bug sb-26465\nBrian - working on my 2\n\nHost API - Andrey blocked again, working with daniel to unblock\nETickets - little grooming today\n\nAndrey - Host api miracle, all auth problems gone, ticketreservation issues, 1 point release story for next sprint\narchtics need to implement some new specs\nEugene - fixing specs for cancelled orders, not enough quals, trying to reproduce bug\nsnowboarding monday/tuesday next week\nDaniel - host api unblocking/meetings\n\nHost API - Daniel worked on unblocking it yesterday, Andrey is confident he can complete it with a release story for next sprint.\nTicketEvo - Daniel is still working on the e2e testing, but was in meetings/unblocking Andrey yesterday\nQual issues: eugene spent a while trying to find an open qual yesterday, hoping people can not use a million quals\n\n\nDaniel jon jon has comments for Etickets archetecture review\n\n1/25\nDaniel - didn't finish tevo testing, v v sad, finish up this week, sidetracked by TM host issue (it was with the API itself, email chain with TM about broken thing), close up sprint with tevo, didn't get prod credentials until friday, Chops was working on mobile instead of \nArchtics cancellation - can't release, can't demo, need another story that wasn't brought up in communication with TM, cancel reason field must map and we don't have a story for that yet\nBrian - \nAndrey - fixing PRs, host API comment stuff, host API still not ready, not sure where to go with host API story, split it up, finished metadata story (added methods to metadata service), picking up host seat map creation\nChops - PRESSURE, PUSHING DOWN ON CHOPS\n\ntevo - didn't get the prod stuff from them until friday, Daniel is working on it more today\nTM cancellation - had a demo scheduled today, after learning about a new api field we need another story to be ready for it\n\ntalk to george anything we need to do last minute before superbowl with any providers\n\n1/26\nDaniel - yesterday tevo, J was terrible, then archtics, working on tevo more but they're being tevo, nearly done with archtics price split, tevo demo at noon still happening\nAndrey - started band page task, really weird subtasks, redesigning them, pregrooming SB-26169, close to done pregrooming\nBrian - closing out sprint, worked on 8 pointer, bug apparently still happening\n\nhost api still bad? can't import tickets\n\ntickets.com integration?\n\nconvo with george, needs to talk to the right person there to get access to the api so we can start on it\n\n1/27\nEugene - seatmap creation results email, scannable voucher template, not sure how to implement, lost a point last sprint\nAndrey - close to completion on \nDaniel - p1 fixed, releasing today, issue caused by bad data at TM, sent off email to J with orders to be confirmed, archtics multiple prices per ticket almost done\nBrian - \n\n2/1\nDaniel - ticketevo changes, waiting on prod connection stuff to release, suggestion based on the fire, look into better prismic change logging\nEugene - \nAndrey - \nBrian - figured out superbowl issue with daniel, we had a setting limiting the total number of tickets available to hold\n\n2/2\nDaniel - bunch of code reviews, looked at stuff for thursday's release, tested email opt out flag stuff, demo for the opt out stuff prep happening, looked at the etickets appear to not get processed during a release bug (looks like it's a story)\nAndrey - some host api call issues, waiting on ryan from TM\nEugene - fixed PR comments, made small story for scannable voucher, started work on new story (add returned reason to cancelled seats)\n\nEugene pulled in some eticket (just-metadata) work, \n\nwells p1 wants to move it to tools team\n\n2/3\nAndrey - punting 2 points because we didn't hear from ryan @ tm fast enough, \nDaniel - demoed andrey's marketing opt-out, couple api call fixes, marketing opt out getting staged\nBrian - seat map creation demo,\n\ntemplates for dealing with business people (like the partner integration ones)\n\nSCRRURURURMMMMM\nSB-27102 - better workaround working now, but still haven't nailed down repro steps\n\nmove 27102 out\n\n2/5\nDaniel - release stuff all day yester day\nBrian - release, archtics/host properties, cloakify\n\n2/8\nAndrey - HOST API - talked to ryan from TM, seems to have fixed finalize order endpoint, but payment is broken now\nEugene - Finished testing return reason, finish pregrooming, \nDaniel - staging release for today, going onto qual36, fixed p1\nBrian - primaryTM in dropdown\n\n\ntalk to daniel about templates (like the ones we have for adding providers)\n- he's working with julie on it\n\n2/9\nDaniel - release work, bugs\nEugene - fixed tm auto buyer bug, \nAndrey - finished bulk uploader changes, ieticketdownloader implementations\n\n2/10\nEugene - finished bug, started pregrooming\nDaniel - grooming/branch maint on etickets, tons of PR reviews, arch review with alex P about tools, \nAndrey - specs for eticketdownloader, found weird circ ref,\nBrian - working on exchange inbox scraper\nChops - buggy bugz bugz, undo bug\n\nadding flag to the api for seatgeek, marty and daniel are talking to them\n\n2/11\nP1 came in, Daniel fixed it and is getting it into RC-2084 (mobile/acquisition) \n\n2/12\nAndrey - done with ieticketdownload implementations, PR out, tried to ping host API - looks like it's working, testing it today\nBrian - \nEugene - Finished update eticket section on order details\nDaniel - TM inbox scraper, Tevo P1 fix in RC-2084, only happening with manual fulfillment  \n\n2/15\nDaniel - release stuff, p1s/tevo, p1 pending release but tevo shut us off, inbox scraper\nBrian - exchange inbox scraper figuring out bamboo build bug\nAndrey - started working on fulfillment API, merging for IEticketDownloader, testing for host story\nEugene - jm pr approved, fixing some specs, merging, starting on preuploader (Added to sprint)\nChops - logging will call ship bug\n\n2/16\nDaniel - bugs not addressable, seatgeek double purchase 10.1 seconds timeout?\nBrian - event level floors\nChops - starting work on data migration testing, \n\n2/17\nAndrey - launched host auto buyer, it was successful, need to change vender ref # to 280 chars, switching bamboo to using databasetool\nEugene - finished\nDaniel - finished up dev on tm inbox scraper\nBrian - \n\n2/18\nDaniel - watching deployment go out, new getorder fields\nAndrey - grabbed story\nEugene - finished story, comment fixes, \nBrian - \nChops - peak data center migration staging\n\n2/19\nDaniel - lots of meetings, san jose migration stuff\nAndrey - working on social account, need to implement DB changes\nEugene - implemented anchor detection\nChops - migration testing\n\n2/22\nEugene - finished 2 ijm stories, researching drawing tools\nAndrey - done with social account core, fixed bug, need to get the bug into a release and figure out where the gigya stuff goes\nBrian - closing out sprint, jira stuff, \nDaniel - bunch of meetings, mocks/grooming\nChops - datacenter testing, \n\n2/23\nDaniel - ton of meetings, today working on migration\nBrian - migration bug\nChops - migration, \nEugene - working on bug, \nAndrey - working on ijm 3 pointer,\n\n2/24\nAndrey - almost done with ijm story\nDaniel - migration\nEugene - finished bug, ticketnetwork\nBrian - \nChops - migration, \n\n2/25\nAndrey - ijm verify, finished second bug, planning to help with mocks\nEugene - continued to work on ticketnetwork downloader story\nBrian - host floor rules ui\n\n2/26\nAndrey - pr fixes, content item tool update\nEugene - pr out for mercury downloading bamboo problems, primary will call ship bug\nChops - 4 backlog bugs PM related\nBrian - \n\n2/29\nDaniel - dc migrated, tm host hold/batch issue, \nAndrey - finished both band page tasks, working on sql integration specs\nEugene - refactoring just metadata, switching to bug\n\n3/1\nDaniel - meetings, \nBrian - host floor ui, \nAndrey - finished specs, meeting with matt, pregroomed just metadata\nEugene - primary will call orders bug\nChops - bgus, bugs, suns, southwest, \n\n3/2\nDaniel - meetings/TDC\nEugene - refactoring, \nAndrey - fighting rawsql select specs, close to done\nBrian - \nChops - suns sw bug \n\n3/3\nDaniel - staging release for 2097, big backup in release queue, waiting on bandpage\nEugene - strage merging issue with mercurydownloader story, switched to refactoring\nBrian - \nAndrey - \nChops - suns \n\n3/4\nDaniel - release, \nEugene - finished refactoring, new stories\nAndrey - \nChops - going to be trying to put together e2e testing\nBrian - \n\n3/7\nChops - frozen four, control panel sql not available\n\n3/9\nDaniel - did some stuff, meetings, maybe some content management stories coming in to tools q2\nEugene - continued to work on the sidebar directive, smores issues\nChops - finishing test cases for tevo e2e\n\n3/10\nAndrey - contiunes ijm\nEugene - ijm\nDaniel - import issues (core stuff now)\nBrian - p1\nChops - 2 p1s, \n\n3/11\nDaniel - visa meeting \nChops - working on writing e2e test cases for etickets\n\npi day -\nDaniel - eticket cutoff time bug\n\n3/15\nAndrey - going to punt 2-3 points\nEugene - new pdf template modal\nDaniel - staging today's release, pushed back because of other release\n\nijm on qual mid monday\nsplitting up andrey's story, 2 or 3 points punted\neugene is pulling in a 3 pointer\n\n3/16\nAndrey - pretty good progress on angular story, didn't test archtics code, 2 point merge with eugene's code\nEugene - continued to work on story, \nDaniel - TDC research, figuring out inventory data models\nBrian - \nChops - lots of bugs popped up since yesterday, \n\n3/17\nAndrey - applying layout, calling backed to save, 2 points for merge, 2 points for layout, friday/saturday huge merge fest\nEugene - new template directive, 1 point punted to merge with andrey's stuff\nDaneil - interviews\nBrian - fees and retail price on host\n\nijm 5 total points going into next sprint, 3 related to merge (2 were scope, 1 was from a story that was pulled in), 2 standard punt\n\n3/18 -\nChops - looking at bug with counter offers\n\n3/21\nAndrey - eticket processor page layout, hard to estimate, working with eugene, getting it to a place i can work on it by tomorrow\nupdate on P1 by Scrum of Scrums\nTim - figure out all of the order affected by the p1, and the best course of action for fixing the broken ones\nEugene - going to be gone thursday friday and monday, mising standup and grooming on wednesday, but will groom tomorrow, fixing some stuff in andrey's branch, waiting for andrey's changes but merging/finishing up, plan on finishing by wednesday\nBrian - \nLinqPad meeting hangout/video possiblity?\n\nWHEN THE RELEASE GOES OUT!\nlet matt know so he can verify his p1\nWHEN THE FIX IS VERIFIED\nlet tim know\n\n3/22\nAndrey -  close to the end, \nEugene - working on new template directive, finished by tomorrow, \nDaniel - p1, more interviews today\nBrian - implement save action for template\nChops - lots of bugs, more bugs, gearing up for ijm e2e\n\n3/23\nDaniel - team leading, interviewed tools lead promising, consolidating shipping rules into readable info (confluence or something)\nAndrey - moving forward with \nChops - trying to get qa bugs out of bugz, \netickets looks like we need another week\n\n3/25\nDaniel - talked with julie \nBrian - \n\n3/29\nDaniel - yesterday interviews, lots of stuff related to the storefront, core team to take zone modification story, another grooming with liz, leaving til monday \nAndrey - today worked on eticketprocessor, refactored modal, huge meeting with local frontend dev, \nEugene - continued to work on new template directive, integrating it with the modal today\nBrian - deploy to qual21, work on modal, looking at bugs try to get into thursday release, take a quck look at bugz-2008\n\nBUGZ-2008\n\nintegrating done\nbugs with shapes 1 or 2 points\ndialog with processing\n\n3/30\nAndrey - pregrooming filtering story, and managed to pass to controller from directive\ndebug endpoint, test anchor origin mode, merge with new, test dirty edit flag, test admin restriction\n\nEugene - almost finished with new template directive, need to make some markup changes, add validation\nBrian - possibly debug in on the server side see what i can figure out,\n\ngetting into \n\n3/31\nEugene - still working on new template directive, pr in an hour\nAndrey - done with the canvas directive, pr is out\nBrian - bugs\nChops - fixing some bugs, \n\n4/1\nEugene - Fixed 27500, created small branch maint story, clean up metadata code, pr is out, found some bugs in new template, fixing those\nBrian - get 27500 reviewed and released for eugene\nChops - little hipchat sidetracked, e2e testing on qual 21\n\n4/4 -\nEugene - fixed some small ijm bugs, implementing \nAndrey - ready for PR for bug override price heirarchy, pr feedback\nDaniel - excellent dense conference, learned a lot about conversion, what needs to be done and what we aren't doing, putting together presentations to get everything communicated\nBrian - \ntessatura, veritix, and TDC\n\n4/5\nAndrey - speccing out bugfix, assigned about 6 points of stories\nEugene - fixing ijm bugs\nDaniel - veritix meeting, \nBrian - releasing stuff\n\nfind out when 2120 is going out, closing sprint requires that, eugene is fixing a couple bugs then putting a new etickets build up on a qual for e2e testing, for bug squashing day we'll try to blast through the 6 bugs in the sprint\n\n4/6\nAndrey - working on bug, moving over, pr out for story, started helper method for seats, finishing tomorrow\nEugene - working on fixing ijm bugs\nDaniel - grooming\nBrian - \nChops - few more bugs into the backlog\n\nijm migration script \n\n4/7\nBrian - bugs, helping carly\nAndrey - done with helper method and specs\nEugene - fixing ijm bugs, deploying to qual\nDaniel - working on non tools things\nChops - kind of buggy, tagging bugs \n\n4/8\nEugene - looking into bug chops was looking into, template wasn't on canvas, getting \nDaniel - \n\n4/11\nDaniel - reviewed bugs\nAndrey - done with helper method, PR is out, (BRIAN REVIEW), 5 pointer is looking good, missing standupp tomorrow and PTO wednesday\nEugene - IJM bugs, pushing code and emailing about bugs\nBrian - bugs\nChops - more bugs in queue looking at, putting together list of bugs from IJM\n\n4/12\nDaniel - big presentation, worked with me to resolve some e2e testing blockers\nEugene - fixed saving in ui and server side, pushing to to a qual soon (like 1 hour)\nBrian - \nChops - meeting about e2e bugs etc, \n\n4/13\nEugene - fixed click a pic, pushing it\nBrian - e2e debugging, \nDaniel - grooming, settlement p1, \nChops - e2e test cases updating in jira, \n\n4/14\nEugene - working on TDC web service methods, need to groom ijm story\nAndrey - worked on 2 dev bugs for IJM, made some progress on TDC, but blocked by web services, punting 3 points because of lack of specs, override price took a few days at the beginning of the sprint, blocked on tuesday\nBrian - taking over IJM, \nDaniel - script for exporting pdf templates, \nChops - mainly metadata testing, more today, more process based plan for qa to make sprints go smoother\n\n4/20\nEugene - continuing to work on ticketblock refactoring, almost done with specs, creating PR soon, then going to veritix, if blocked then switch to bugs\nAndrey - veritix web service\nDaniel - merging PR, veritix call\nBrian - \nChops - yesterday went through IJM testing, plateauing, looking through BUGZ\n\n4/21\nDaniel - approval from everyone waiting on jeff on import pipeline updates, met with BOs and jaspal about QA\nAndrey - veritix web service, started specs, writing some specs before implementing\nEugene - fixing specs for tickeblock refactoring and started inventory provider for veritix\nBrian - ijm\nChops - all about testing metadata\n\n4/22\nEugene - continued to work on veritix inventory provider\nBrian\nChops - looking at metadata, lots of meetings today, \nDaniel - last approval on last story, merged into ticketblock epic branch, grooming qa processes, \n\n4/25\nDaniel - \nEugene - veritix inventory provider\nAndrey - developing veritix web service, \nBrian - ijm stuff\n\n4/27\nDaniel - grooming\nAndrey - fixed one bug (28324) not sure all specs still pass fighting bamboo, missing order api (28717) bug can't reproduce, more veritix\nEugene - bugs, first 28353 reproduced and then found it's already fixed by core, 28872 not able to reproduce but found issue, fixing it, archtics/host autobuyer failing, working on veritix next\nBrian - \nChops - talk to trenda about eugene's bug\n\n4/28\nEugene - fixing bug with will call list (BRIAN APPROVE IT), then veritix inventory provider, finishing up today\nDaniel - grooming on and offline\nAndrey - xml deserialize issue, PTO from may 1 til may 10\n\n4/29\nDaniel - interviewed the new daniel (hopefully offer?)\nEugene - finished inventory provider implementation, make PR, waiting for approval, switched to bug\nBrian - \nChops - more testing, did some testing yesterday, bulk upload bug, marty has a few test cases/bugs\n\n5/2\nDaniel - officially conversion team lead\nBrian - \n\n5/4\nEugene - exploring bugs, still can't reproduce sb-28819 need to talk to trenda, sb-28353 can't reproduce hoping someone could reproduce and add sumo logs - chops, working on veritix auto buyer, and PR is out\nDaniel - conversion, some PR reviews\nBrian - \n\n5/5\nEugene - fixed bug for FP, working on another bug, started work on inventory auto buyer implementation, created web service models, \nDaniel - nothing to share for tools, closing sprints on time\nBrian - \n\n5/6 - \nEugene - working on bug 29548 - fixed it and posted a suggestion for improvement, 29371 - wells posted response to comment on it, need daneil's input on how to reproduce, continued to work on veritix auto buyer\nBrian - merging/fixing inbox scraper\nChops - comment into bug 28522, trenda hasn't seen it in a while, possibly pull it out, \n\n5/9\nDaniel - grooming\nBrian - \nprocessing uploads\nbulk upload tickets stay at the bottom of the page, \nspinner when processing from the template editor\n\n5/11\nEugene - continued to work on veritix ticketbuyer, lots of questions\nAndrey - still blocked on vertix api won't respond, looks like their sandbox is down, also looked into bugs fixed a couple\nDaniel - accepted offer for tools team lead\nBrian - \nChops - \n\n5/12\nEugene - veritix auto buyer, specs\nAndrey - veritix issue with api, tried to reproduce 28819\nDaniel - \nBrian - \n\n5/13\nEugene - smoke testing on bugs, continued to work on ticketbuyer - closing it up this afternoon\nDaniel - missing slash at the end of endpoints veritix, making sure we're unblocked\nBrian - \n\n5/16\nAndrey - made some changes to bugs PRs, one has spec that also fails on develop, vertix web service working intermittently, need a day or two\nDaniel - grooming\nBrian - \nEugene - trying to fix strange specs fix, \nChops - ijm testing!\n\n5/18\nDaniel - release plans/pr review\nAndrey - submitted PR for web service, resolved conflicts, \nEugene - reviewing PR, fixed bug \"sorry error occurred\" started work on property add/edit page \nBrian - \n\n5/19\nDaniel - interview\nAndrey - continued working, blocking eugene, \nEugene - merging approved PR\nBrian - cleaning up IJM\nChops - steel panther, \n\n5/20\nDaniel - nothing tools, \nEugene - property edit page, \nBrian - \nChops - \n\n5/23\nDaniel - \nEugene - continued to work on add/edit page, waiting for andrey, question about \nAndrey - continued working on property refactoring db changes, \n\n5/25\nDaniel - \nEugene - fighting compilation issue after merging with andrey, maybe demo tomorrrow\nBrian - \n\n5/26\nDaniel - working with julie on ticketevo\nEugene - fixing branch, sc\n\n5/27\nEugene - did the demo, couple of issues punting 2 points\nDaniel - \nBrian - punting 2 points of veritix story, staging ijm today\n\n6/1\nEugene - working on story, refactoring property page, fixing last spec, write 2 new specs\nAndrey - almost done with preupload job changes, need example of popup (update tooltip hover image), 2 bugs, both done, schedule demo for monday?\nDaniel - interview week, \n\n6/2\nEugene - continuing to work on property page, almost done with specs, \nAndrey - done with \nDaniel - \n\n6/6\nEugene - still merging 2 views into 1\nAndrey - done with refactoring ticketbuyers, delaying demo until eugene has ui changes\nTODO\nUpdate gospel google doc with tevo status\n\n6/8\nAndrey - took a bug from the backlog, got a PR out for it, started preuploader story\nEugene - deployed branch to qual but having issues with qual\nDaneil - \nBrian - \n\n6/9\nEugene - fixed some issues with property edit page, waiting for feedback from chops, scheduling demo after\nstarted working on preuploader story\nDaniel - \nBrian - \n\n6/10\nEugene - making some changes in edit property page, and specs, one spec to fix, really strange issue\nBrian - release stuff\nDAniel - no tools\n\n6/15\nEugene - still trying to fix failed specs, caused by incorrect nhibernate mapping, \nAndrey - preuploader on hold, waiting on eugene's story, working on archtics refactoring\nBrian - 3 bugs going out\nDaniel - plan for getting darry up to speed\nChops - working with julie to get tevo to a testable state\n\n6/20\nEugene - finished update edit property page, fixed all specs, cleanup fixed, started working on preuploader\nBrian - \n\n6/22\nEugene - almost finished preuploader story, PR is out, refactoring now\nBrian - \n\n6/23\nDaniel - got svg floorplan asset generation improvement into the release, some small issues with it, fixed now, waiting on final review\nBrian - \nEugene - addressed PR comments, testing usage of archtics and host properties, no new specs, started to work on creating account bug,\n\n6/24\nDaniel - png quant, floorplan down from 45 minutes to 45 seconds!\n\n6/27\nDaniel - nothing tools\nEugene - working on story for auto retry templates\nAndrey - going through emails, made sure archtics url changes pass specs, addressing PR feedback for preuploader, and prepping for and figuring out time for demo\nBrian - \n\n6/29\nAndrey - figured out what was wrong with TM spec, demo delayed\n** need to look into eticketpreupload branch to figure out what's wrong **\nEugene - continuing to work on 30091, writing specs, fixing existing specs, some questions about preuploader, creating PR\nDaniel - \nBrian - ticketevo orders confirmed but coming back\n\n6/30\nAndrey - working on preuploader, missing definition, need to groom new story, worked on stacks on stacks\nEugene - pr out for 30091, should make a change for making reprocessing for template when we use the bulk uploader, prepping test environment for demo\nBrian - \n\n7/1\nDaniel - updated branch with latest develop for fxchange, q42 fxchange, target 7th deployment\nEugene - testing 30091 and prepping demo, bamboo not running specs\nBrian - bug fix, release stuff\nChops - fxchange, autobuyer inventory etc. \n\n7/7\nAndrey - Getting preuploader working on a qual, demo for monday, it's on qual33,\nEugene - chat with trenda about issues, fixed issues and testing \nBrian - duplicate active fulfillment, veritix web service, branch maint\nDaniel - meeting for fanxchange testing\nChops - 2 bugs, fanxchange\n\n7/8\nDaniel - did some testing on fxchange, 500 error trying to simulate auto buyer, reached out got response, looking into issue\nBrian - veritix branch maint, getting p1 ready to go out\nChops - fanxchange blocked, counter offer bug, \n\n7/11\nAndrey - fixed bug, deployed to qual, preuploader on qual, after feedback pulling in stories from 16.15\nEugene - fixing bugs found in template story, fixed some bugs, not complete, found bug related to processing\nBrian - specs bug, cleaning up veritix branch\nDaniel - fanxchange, seats groomed story\n\n7/13\nAndrey - switched to spec story, put 31008 on hold\nEugene - testing template story, feedback due to incorrect data, worked on august bug\nDerry - completed onboarding, hopefully getting into bugs soon\nBrian - specs bug\n\n7/14 - \nEugene - testing august bug, deploying archtics api branch, started on tm face value event discovery, not fully sure how to test archtics api\nBrian - \ncall with TM today, moral of the story we did nothing wrong and they're figuring out what's happening on their end\n\n7/15\nDerry - onboarding complete, picking up filtering for veritix story\nArchtics api updates are out, no issues yet\nFanXchange testing auto buy is just fine, haven't been able to test fulfillemnt because of issues on their side, waiting on a timeframe.\n\n7/18\nDerry - started on veritix story, about a third through, should be in qa in the next couple days. \nAndrey - working on spec provider story, UI changes ended up tough, changing mask value, going out thursday. preuploader on qual.\nEugene - August works! it's on a qual. going out thursday. Trying to test template story 30091, working on testing api\nDaniel - trying to catch up on emails, fxchange, stuff on q42 testable, got events from fxchange, only 1 useable\nBrian - working on P1, turned into p2 after workaround.\n\n7/20\nAndrey - spec provider issue, 502 error, preuploader - continue offline\nEugene - working on event discovery\nDerry - putting out PR for veritix story\nDaniel - fanxchange partial qual delays, trying to get it merged into the release\nChops - got fanxchange onto qual22, no sellable inventory coming in, ticketmaster issue with some event names\n\n7/21 - \nEugene - trying to release tm event discovery, didn't finish it, subtasking, estimated about 1 point left of work\nDerry - fixed pr comments, added migration script, looking to get it on qual, wrapping up today. Pregrooming,\nBrian - \n\n7/22 -\nEugene - working on TM story, addressed all PR comments, just need to fix one spec. picked up another TM story (collect and store provider data)\nDerry - Vertix story in QA, pregrooming.\nDaniel - Fanxchange looks good in the release\nChops - Looking at Bulk uploader issue. Fanxchange - purchase has worked, haven't been able to fulfill.\nBrian - merging and releasing\n\n7/25\np1 from release friday, fixed\n2 more bugs since then, being investigated, most likely pulling into sprint as p2s and replacing existing sprint bugs\nbulk uploader bug\nautomatic template retry issue\nDaniel - worked to fix p1 friday, still haven't heard from fanxchange, waiting for a good sandbox event still\nDerry - Filtering for veritix is still in QA, qual issues on friday look resolved, deployed 1 pointer to 29 for QA, exchange dash story holding off\nAndrey - merge develop into preuploader branch\nEugene - 31006\nChops - verifying 2 derry stories, looking into 2 bugs\n\n7/27\nAndrey - finished working on scheduled job\nEugene - collect and store provider event data, fixing some bugs, getting PR out, merging previous story into release\nDerry - extranet bug looks like it'll need to be a story, figuring out when to groom that\nBrian - preuploader not making it out\nChops - working on veritix filtering story verification\n\n7/28\nDerry - note on veritix story from chops, working with him, one veritix story ready for deployment\nAndrey - started working on bug, really confusing, left comment asking for clarification, started 1 pointer on seatmapworkflow, not enough points in sprint\nEugene - working on collect and store provider event data, bamboo issues\nBrian - looks like a p2 is a bigger deal than expected, trying to get it out asap\n\n7/29\nEugene - Testing story (collect provider event), found and fixed little issue, just need to test on qual but scumbag bamboo, asking trenda for help with bug, archtics api testing, REVIEW PR\nDerry - release stuff held up, still working on exchange dash\nBrian - p1, release, bulk uploader\n\n8/1\nDerry - bamboo issue trying to get p1 out, \nAndrey - started veritix 5 pointer\nBrian - p1 and p2\nChops - little time with carly/julie/derry about veritix story, some matt johnson bugs to prioritize high p2s\nJulie - following up with kevin from fanxchange because we still don't have good enough test data\n\n8/3\nAndrey - working on eugene's PR, still one failing spec\nDaniel - grooming and helping Derry\nDerry - trying to get exchange model/services out to qa, \nBrian - preuploader\nCarly - p1 derry is on it\n\n8/4\nAndrey - fixed bug from veritix ui\nDerry - working on release/carly's bug (seems like there are some qual issues)\nBrian - preuploader (need to recode)\nJulie - fanxchange says all sandbox events should be testable\n\n8/5\nDerry - helping with release, looking into carly's p1 (now p2) test event issue bad data or something but other events work, digging more into test event, she's unblocked for now but we still need to figure out what's happening with the test event, working on punted story\nBrian - preuploader/eticket bugs\nChops - verifying for release, when we need something QA'd on a qual we need a subtask for QA, fanxchange testing\nJulie - veritix call, found an issue in code review, still waiting on them (should be done before end of august)\nMarty - since IJM we're up to 86% auto close (overall)\n\n8/8\nCREATE SUB TASKS TODAY, including QA subtask for chops\nDerry - started on veritix story, have bug starting it today, \nBrian - little things first, waiting on builds, TODAY SUB TASK OUT BIG STORY\nAndrey - continued on 29633, \n31571 need to get into acq/exp release\nChops - talking to Daniel to get test events ready to test on qual, incorrect bid issues\n\n8/10\nDerry - working on getting everything staged for release tmr, today trying to finish up exchange dash story\nAndrey - working on neil's story 31168, looks like it needs regrooming\nDaniel - couple PRs, looking at fanxchange\nBrian - staging stuff, then took over sb-31571, LET MARTY KNOW WHEN WE HAVE STUFF STAGED ON 36\n\n8/11\nAndrey - working on storting for projected values, switched back to veritix (concerned about it because it still has some unanswered questions) adding blocker. will pick up eugene's bug if blocker isn't figured out\nDerry - getting exchange dash to qa, getting ready for release today, release going out at 1\nBrian - verifying matt johnson bug\nMarty - broker portal upload issue\n\n8/12\nDerry - getting story ready for monday, investigating issue with Carly related to football, can't get any tickets, talking to TM (archtics)\nBrian - release stuff, marty bug (data issue, added bug to backlog to deal with cause), \nNeil - seat map charges/fees need to groom it out\nJulie - sandbox issue (host) from TM should we switch to partner api instead of commerce api (groom out on monday)\nfanxchange, might be an issue with instantdownload \nmarty needs his team to see fees before that's going out\n\n8/15\nAndrey - kept working on 29633 (veritix offers UI), neil is going to test projected values and addressing that feedback\nDaniel - grooming\nBrian - TM exchange events dash\nJulie - fxchange instant download? \n\n8/17\nAndrey - checked 2 stories in qa no updates, started working on 31721 - got PR out\nBrian - 1 bug and 1 story staged\nDaniel - fanxchange not done testing\n\n8/18\nAndrey - feedback for veritix angular story, deployed to qual1, \nDaniel - couple of updates for fanxchange for instantdownload, up on q37 and chops is testing\nChops - testing andrey's stuff then testing fanxchange, looking into error for carly\nGROOMING - figuring out TM partner endpoints, some questions for them and Julie's on it\n\n8/19\nChops - left a message on fxchange story for daniel, having a hard time going e2e, couple of things wrong with veritix ui, looking close to done just a few little bugs (probably a point of )\n\n8/22\nAndrey - checked qual1 and saw updated version of veritix offer interface, started another story (31237) and left comment, still have mapping story with projected values not verified\nEugene - started to work on SM mapping email (), not sure if we can reproduce SB-28351 because log in comments is outdated\nDaniel - grooming\nBrian - 1 bug going out with acq/exp (verifying in staging), 2 bugs in QA getting them ready to stage \nChops - looking at veritix on qual1, fanxchange testing able to make test purchase, verifying fulfillment flow with marty/trenda\nMarty - prismic credentials haven't been changed\nJulie - out wed/thurs/fri/mon\n\n8/29\nAndrey - finished 31237 add link story was going to push to qual but packaging failed, PR waiting, eugene commented\ndidn't start bug, no comments can't reproduce on qual\nstarted 5 pointer from next sprint - 31723\nEugene - Started working on 31722\nBrian - q4 stuff\nChops - looking at 31929 as soon as he gets in, seeing what else is in QA to take a look\n\n",
+			"file": "/Users/bsmith/SCRUM OF SCRUMS",
+			"file_size": 34224,
+			"file_write_time": 131163606070000000,
+			"settings":
+			{
+				"buffer_size": 34584,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "home.html",
+			"settings":
+			{
+				"buffer_size": 1479,
+				"line_ending": "Unix",
+				"name": "Hello"
+			}
+		},
+		{
+			"file": "lavieeibel.css",
+			"settings":
+			{
+				"buffer_size": 81,
+				"line_ending": "Unix",
+				"name": "body {"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/User/npm-install.sublime-build",
+					""
+				],
+				[
+					"Packages/User/untitled.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/User/npm-install.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "npm",
+		"selected_items":
+		[
+			[
+				"npm",
+				"npm: Run Script"
+			],
+			[
+				"pkgctlins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/bsmith/lavieeibel/index.php",
+		"/Users/bsmith/react-solitaire/package.json",
+		"/Users/bsmith/Library/Application Support/Sublime Text 3/Packages/User/npm-install.sublime-build",
+		"/Users/bsmith/Library/Application Support/Sublime Text 3/Packages/User/untitled.sublime-build",
+		"/Users/bsmith/react-solitaire/react-solitaire.sublime-project",
+		"/Users/bsmith/testgame/src/deck.js",
+		"/Users/bsmith/testgame/src/card.js",
+		"/Users/bsmith/Downloads/Mr.Robot.S02E05.720p.HDTV.x264-FLEET/mr.robot.s02e05.720p.hdtv.x264-fleet.nfo",
+		"/Users/bsmith/testgame/testgame.sublime-project",
+		"/Users/bsmith/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/bsmith/Downloads/Extensions.linq",
+		"/Users/bsmith/Downloads/ticketevolution-python-master/test/testdata/client_post.json",
+		"/Users/bsmith/Documents/Eticket JSON Request",
+		"/Users/bsmith/Downloads/Proof of concept.linq",
+		"/Users/bsmith/Library/Application Support/Sublime Text 3/Packages/User/Plain text.sublime-settings",
+		"/Users/bsmith/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"^",
+			"\\n",
+			"\\r\\n",
+			"/n",
+			"/r/n",
+			"seats",
+			"cursor",
+			"inet_status",
+			"\\\\\"",
+			"\\\\t",
+			"\\\\n",
+			"\\n",
+			"tickettypeid",
+			"hostfloorrule",
+			"fromshipping",
+			"pagedresponse",
+			"ticketevolutionpageresponse",
+			"pageresponse"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"\\\"",
+			"\\t",
+			"\\n"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Users/bsmith/SCRUM OF SCRUMS",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 34584,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								34582,
+								34582
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 11442.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "home.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1479,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1407,
+								1407
+							]
+						],
+						"settings":
+						{
+							"auto_name": "Hello",
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "lavieeibel.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 81,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								81,
+								81
+							]
+						],
+						"settings":
+						{
+							"auto_name": "body {",
+							"syntax": "Packages/CSS/CSS.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.textarea":
+	{
+		"height": 100.0
+	},
+	"pinned_build_system": "",
+	"project": "lavieeibel.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
